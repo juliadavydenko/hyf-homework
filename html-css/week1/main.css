@@ -5,3 +5,10 @@ body {
   margin: 20px;
   padding: 80px;
 }
+.profilepic {
+  width: 250px;
+  height: 250px;
+}
+.color {
+  color: purple;
+}
