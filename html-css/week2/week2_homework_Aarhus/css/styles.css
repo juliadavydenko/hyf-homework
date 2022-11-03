@@ -1,0 +1,97 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  text-align: left;
+}
+
+h1 {
+  font-family: 'PT Sans', sans-serif;
+  text-align: left;
+  margin: 0% 0% 0% -100%;
+}
+
+p {
+  color: #8f8f8f;
+  margin: 1% 0% 0% 1%;
+  font-size: 1.2rem;
+}
+
+.big-heading {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: black;
+  margin: 10px 5px 5px 5px;
+  padding: 10px 5px 5px 5px;
+}
+
+.main-text{
+  text-align: justify;
+}
+/* Containers */
+.container-fluid {
+  width: 100%;
+  padding: 5% 15% 0% 15%;
+}
+
+.white-section {
+  background-color: white;
+  width: 100%;
+}
+
+.col {
+  margin-top: 5%;
+}
+/* Navigation Bar */
+.navbar-light {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 5px;
+  margin-top: 50px;
+  margin-left: -1%;
+}
+
+.home {
+  color: black;
+}
+
+.nav-item {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  margin-top: 50px:;
+}
+
+/*Section Picture*/
+.section-picture-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 1% 1%;
+}
+
+/*Footer*/
+#footer {
+  background-color: purple;
+  color: white;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+}
+
+th {
+  height: 80px;
+}
+
+td {
+  width: 300px;
+}
+
+.map-image {
+  position: relative;
+  height: 100px;
+  width: 100px;
+}

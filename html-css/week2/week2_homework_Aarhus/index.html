@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Week2. Website recreation. Responsive web-design.</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <h1 class="big-heading">HALLOWEEN AS A SPECIAL OCCASION.</h1>
+      <p>an article about Halloween</p>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home"><span class="home">home</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">our services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#office">our office</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section Picture -->
+  <main>
+    <img class="section-picture-image" src="images/section-image.jpg" alt="section-image" />
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <h4>HALLOWEEN AS A SPECIAL OCCASION</h4>
+          <p class="main-text">
+            Across the West, younger people are more likely to think that Halloween is celebrated as a "proper" special occasion, rather than because of commerical influence
+          </p>
+        </div>
+        <div class="col">
+          <h2>PRACTICAL HALLOWEEN</h2>
+          <p class="main-text">
+            1. Freeze gummy eyeballs in ice cubes, then add them to your victim's drink.<br><br>
+
+            2. Buy cheap hair extensions the same color as your target's hair and scatter them around her pillow during the night.<br><br>
+
+            3. Unscrew a shower head and dry the inside of it thoroughly; then pour in a packet of red powdered drink mix and replace the shower head. The unlucky person who turns on the faucet will be showered with fake blood.<br><br>
+
+            4. Buy a kit to make caramel apples at the grocery store, but substitute the apples with onions. Cover them with nuts or coconut to complete the disguise and bring them to a Halloween party for a larger prank you can simultaneously pull
+            on many unsuspecting victims!
+          </p>
+        </div>
+      </div>
+      <!-- Used containers with equal width from Bootstrap to make 4 of them -->
+      <div class="row">
+        <div class="col">
+          <h4>THE GALLERY</h4>
+          <p class="main-text">
+            Images to the right should be added as links. Each image should be responsive.
+          </p>
+        </div>
+        <div class="col">
+          <h2>LOGOTYPES ON THE WEB</h2>
+          <p class="main-text">
+            <!--Added the second class img-fluid from the Bootstrap to make these images rsponsive -->
+
+            <img class="logo img-fluid" src="images/cat-hlw.png" alt="cat" />
+            <img class="logo img-fluid" src="images/cndl-hlw.png" alt="candle" />
+            <img class="logo img-fluid" src="images/witch.png" alt="witch" />
+            <img class="logo img-fluid" src="images/pumkin-hlw.png" alt="pumpkin" /><br><br>
+            <img class="logo img-fluid" src="images/zmb-hlw.png" alt="zombie" />
+
+            <img class="logo img-fluid" src="images/boo-hlw.png" alt="boo" />
+            <img class="logo img-fluid" src="images/bat-hlw.png" alt="bat" />
+            <img class="logo img-fluid" src="images/castle.png" alt="castle" /><br><br>
+            <img class="logo img-fluid" src="images/cotton-candy.png" alt="cotton-candy" />
+            <img class="logo img-fluid" src="images/date-hlw.png" alt="date" />
+
+            <img class="logo img-fluid" src="images/ghost.png" alt="ghost" />
+            <img class="logo img-fluid" src="images/moon.png" alt="moon" /><br><br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-section" id="footer">
+    <div class="container-fluid">
+      <table>
+        <thead>
+          <tr>
+            <td>
+              FIND US
+            </td>
+            <td>
+              ABOUT THIS PAGE
+            </td>
+            <td>
+              ARCHIVES
+            </td>
+            <td>
+              NAVIGATION
+            </td>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img class="map-image" src="images/map-image.png" alt="map-image" />
+            </td>
+            <td>
+              This is footer page<br> of the homework 02
+            </td>
+            <td>
+              March 2016
+            </td>
+            <td>
+              Home
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Hack Your Future <br>Copenhagen
+            </td>
+            <td>
+            </td>
+            <td>
+              February 2016
+            </td>
+            <td>
+              About
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              M-Th:7am-4pm
+            </td>
+            <td>
+            </td>
+            <td>
+              January 2016
+            </td>
+            <td>
+              History
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Fri-Sat:9am-8pm
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+              Contact
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+              Blog
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+  </footer>
+
+</body>
+
+</html>
