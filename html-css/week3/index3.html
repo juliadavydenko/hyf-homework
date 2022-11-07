@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- * I put these 3 pages into one document, they are separated by tabs inside.
+I used these guide as a reference https://css-tricks.com/the-checkbox-hack/#aa-tabbed-areas
+*  Also, I tried to make Next buttons work, but they didn't. I assumed it's because JS needed or I did something wrong.
+(I tried this: <a href="#" class="next">Next &raquo;</a> and <div id='tab2'><a name='tab2'></a></div>
+and after # the id name.
+* Tried to make it responsive with media query as well.
+* checked validation limits according to the table
+* added tab 4 from the form that i did during class on Sunday -->
+
+<head>
+  <meta charset="utf-8">
+  <title>Step 1-4.pdf</title>
+  <link rel="stylesheet" href="styles3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="tabs">
+    <div class="tab">
+      <input type="radio" id="tab-1" name="tab-group-1" checked>
+      <label for="tab-1">Tab One</label>
+      <div class="content">
+        <div class="box">
+          <img class="logo" src="images/logo-png.png" alt="logo-png">
+          <img class="navigation" src="images/navigation-png.png" alt="navigation-png">
+        </div>
+
+        <h1>Sign up to yourcustomtailor.com</h1>
+        <p>We can’t wait to help you improve your life-style and gain the attention from people around
+          you!</p><br><br>
+        <p>Sign up below to save up to 70% on apparel, hand-bags and cosmetics. Our agents are busy
+          picking the best offers that match your preferences and style. Every week we will send you a
+          hand-picked selection - we just need to know a few details about your first…</p>
+        <h2>Step 1/4 - tell us who you are?</h2>
+        <label for="file">Progress:</label><br>
+        <progress id="file" value="32" max="100"> 32% </progress>
+        <p>Nice to meet you. Let’s spend a minute to get to know each other? Please enter the following:</p>
+        <table>
+          <th>
+          <td>
+            <h3>First name*</h3><br />
+            <input type="text" id="text" name="text" placeholder="Angela" required>
+          </td>
+          <td>
+            <h3>Last name*</h3><br />
+            <input type="text" id="text1" name="text1" placeholder="Bacon" required>
+          </td>
+          </th>
+        </table>
+        <div class="align">
+          <h3>Country*</h3><br />
+          <select name="choices" required><br />
+            <label for="choices">Country*</label><br>
+            <option value="one">Denmark</option>
+            <option value="two">Norway</option>
+            <option value="three">other</option>
+          </select>
+        </div>
+        <table>
+          <th>
+          <td>
+            <h3>Street address*</h3><br />
+            <input type="address" id="address" name="address" placeholder="My Street and house number" required>
+          </td>
+          <td>
+            <h3>Post code*</h3><br />
+            <input type="text" name="postcode" maxlength="4" id="postcode" placeholder="1111" pattern="^0[1-9]|[1-9]\d$" required />
+          </td><br>
+          </th>
+        </table>
+
+        <table>
+          <th>
+          <td>
+            <label for="textarea">
+              <h3>Profile Description</h3>
+              <p>Please provide a short
+                description of yourself <br> to be
+                displayed on our social
+                community pages.
+              </p>
+            </label>
+          </td>
+          <th>
+          <td>
+            <textarea maxlength="500">Write about yourself here.</textarea>
+          </td>
+          </th>
+        </table>
+        <p>Use the same address for billing and shipping? Uncheck below to fill out a separate shipping address.</p>
+        <label for="checkbox">Shipping address</label>
+        <input type="checkbox" id="checkbox" name="checkbox" checked/ required><br>
+
+        <button type="button" class="btn1"><img src="images/btn.png"></button><br />
+      </div>
+    </div>
+
+    <div class="tab" id="tab2">
+      <input type="radio" id="tab-2" name="tab-group-1">
+      <label for="tab-2">Tab Two</label>
+      <div class="content">
+        <div class="box">
+          <img class="logo" src="images/logo-png.png" alt="logo-png">
+          <img class="navigation" src="images/navigation-png.png" alt="navigation-png">
+        </div>
+
+        <h1>Sign up to yourcustomtailor.com</h1>
+        <h2>Step 2/4 - how can we reach you?</h2>
+        <label for="file">Progress:</label><br>
+        <progress id="file" value="32" max="100"> 32% </progress>
+        <p>We will probably need to stay in touch somehow. Let is know how we can reach you?</p>
+        <table>
+          <th>
+          <td>
+            <h3>Email*</h3><br />
+            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+          </td>
+          <td>
+            <h3>Phone</h3><br />
+            <input type="tel" id="tel" name="tel" placeholder="45505050">
+          </td>
+          </th>
+        </table>
+        <div class="align">
+              <h3>Password*</h3>
+              <input type="password" id="password" name="password" placeholder="11111111" required>
+          <br>
+              <h3>Re-enter Password*</h3>
+              <input type="password" id="password1" name="password1" placeholder="11111111" required>
+      </div>
+      <br>
+      <div class="newsletter">
+        <p>I want to sign up for the newsletter</p>
+        <input type="radio" name="radio" id="radio1" />
+        <label for="radio1">Weekly news</label>
+        <input type="radio" name="radio" id="radio2" />
+        <label for="radio2">Monthly news</label>
+        <input type="radio" name="radio" id="radio3" />
+        <label for="radio3">Don't send me news</label>
+      </div>
+      <button type="button" class="btn1"><img src="images/btn.png"></button><br />
+    </div>
+  </div>
+
+  <div class="tab">
+    <input type="radio" id="tab-3" name="tab-group-1">
+    <label for="tab-3">Tab Three</label>
+    <div class="content">
+      <div class="box">
+        <img class="logo" src="images/logo-png.png" alt="logo-png">
+        <img class="navigation" src="images/navigation-png.png" alt="navigation-png">
+      </div>
+
+
+      <h1>Sign up to yourcustomtailor.com</h1>
+      <h2>Step 3/4 - Time to learn about your preferences?</h2>
+      <label for="file">Progress:</label><br>
+      <progress id="file" value="32" max="100"> 32% </progress><br>
+      <p>What kind of items are you interested in offers on?</p>
+
+      <div class="box">
+        <div class="label"><label for="checkbox">Apparal</label>
+          <input type="checkbox" id="checkbox" class="checkbox" name="checkbox" checked />
+        </div>
+
+        <div><label for="checkbox">Jewerly</label>
+          <input type="checkbox" id="checkbox" class="checkbox" name="checkbox" checked />
+        </div>
+      </div>
+      <div class="box">
+        <div><label for="checkbox">Accessories</label>
+          <input type="checkbox" id="checkbox" class="checkbox" name="checkbox" checked />
+        </div>
+
+        <div><label for="checkbox">Shoes</label>
+          <input type="checkbox" id="checkbox" class="checkbox" name="checkbox" checked />
+        </div>
+      </div>
+      <div class="box">
+        <div><label for="checkbox">Handbags</label>
+          <input type="checkbox" id="checkbox" class="checkbox" name="checkbox" />
+        </div>
+      </div>
+      <p>Choose the images that best resemble your style</p>
+      <div class="box">
+        <div class="selecting"><img class="select" src="images/select.png" alt="select-png"><br>
+          <label for="checkbox">Select</label>
+          <input type="checkbox" id="checkbox" class="checkbox" name="checkbox" checked />
+        </div>
+        <div class="selecting"><img class="select" src="images/select.png" alt="select-png"><br>
+          <label for="checkbox">Select</label>
+          <input type="checkbox" id="checkbox" class="checkbox" name="checkbox" checked />
+        </div>
+        <div class="selecting"><img class="select" src="images/select.png" alt="select-png"><br>
+          <label for="checkbox">Select</label>
+          <input type="checkbox" id="checkbox" class="checkbox" name="checkbox" checked />
+        </div>
+        <div class="selecting"><img class="select" src="images/select.png" alt="select-png"><br>
+          <label for="checkbox">Select</label><br>
+          <input type="checkbox" id="checkbox" class="checkbox" name="checkbox" checked />
+        </div>
+      </div>
+      <div class="box">
+        <div class="selecting"><img class="select" src="images/select.png" alt="select-png"><br>
+          <label for="checkbox">Select</label>
+          <input type="checkbox" id="checkbox" class="checkbox" name="checkbox" checked />
+        </div>
+        <div class="selecting"><img class="select" src="images/select.png" alt="select-png"><br>
+          <label for="checkbox">Select</label>
+          <input type="checkbox" id="checkbox" class="checkbox" name="checkbox" checked />
+        </div>
+        <div class="selecting"><img class="select" src="images/select.png" alt="select-png"><br>
+          <label for="checkbox">Select</label>
+          <input type="checkbox" id="checkbox" class="checkbox" name="checkbox" checked />
+        </div>
+        <div class="selecting"><img class="select" src="images/select.png" alt="select-png"><br>
+          <label for="checkbox">Select</label>
+          <input type="checkbox" id="checkbox" class="checkbox" name="checkbox" checked />
+        </div>
+      </div>
+      <br>
+
+      <button type="button" class="btn1"><img src="images/btn.png"></button><br />
+    </div>
+  </div>
+  </div>
+
+
+  <div class="tabs">
+    <div class="tab">
+      <input type="radio" id="tab-4" name="tab-group-2" checked>
+      <label for="tab-4">Tab Four</label>
+      <div class="content">
+
+        <section class="summary">
+          <h1>Order Summary</h1>
+          <table>
+            <th>
+            <td>
+              Soudfa Plus: 3 months
+            </td>
+            <td>
+              $33.33 / month
+            </td>
+            </th>
+          </table>
+          <hr />
+          <table>
+            <th>
+            <td>
+              Total
+            </td>
+            <td>
+              $100
+            </td>
+            </th>
+          </table>
+        </section>
+        <section class="payment">
+          <h1>Payment Method</h1>
+          <img class="payment_img" src="images/1.png" alt="creditcard">
+          <img class="payment_img" src="images/2.png" alt="paypal">
+          <h1>Card Info</h1>
+          <table>
+            <th>
+            <td>
+              Card number<br />
+              <input type="text" id="card_text" name="card_text" maxlength="16" placeholder="1234 1234 1234 1234">
+            </td>
+            <td>
+              Expiry date<br />
+              <input type="date" id="date" name="date" placeholder="MM/YY">
+            </td>
+            <td>
+              Security code<br />
+              <input type="text" id="code_text" name="code_text" minlength="3" maxlength="3" placeholder="CVV">
+            </td>
+            </th>
+          </table>
+          <button type="button" class="btn2">Buy Now</button><br />
+          <a href="https://www.w3schools.com/html/html_links.asp">Need Help?</a>
+        </section>
+
+
+
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+  </div>
+
+
+</body>
