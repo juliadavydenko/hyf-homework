@@ -28,12 +28,7 @@ textarea {
   margin-left: 500px;
 }
 
-.box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
+
 
 .label {
   display: flex;
@@ -43,7 +38,12 @@ textarea {
 .btn1 {
   margin-left: 700px;
 }
-
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 @media screen (min-width: 320px) and (max-width: 1268px) {
   body {
     margin-left: 25px;
@@ -129,7 +129,6 @@ a:hover {
 .tabs {
   position: relative;
   min-height: 1000px;
-  /* This part sucks */
   clear: both;
   margin: 25px 0;
 }
@@ -191,4 +190,12 @@ a:hover {
 .align {
   text-align: left;
   margin-left: 5px;
+}
+
+
+
+#block_container
+{
+    text-align:center;
+
 }
