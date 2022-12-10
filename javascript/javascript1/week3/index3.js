@@ -1,5 +1,5 @@
 // Item array removal
-
+//test
 /* I assume there might be a simplier solution to this because wewere given:
 const nameToRemove = "Ahmad";
 Hovewer this option worked as well.
@@ -90,11 +90,15 @@ const seriesDurations = [
 function logOutSeriesText(data) {
 const lifespan = 80;
 const lifespanInMinutes = (lifespan * 365 * 24 * 60);
-const seriesTime = data.days
-  console.log(seriesDurations[] + " gave " +  0.01% + " joy to my life")
+for (let i = 0; i < seriesDurations.length; ++i) {
+let serie = seriesDurations[i];
+let seriesTime = serie.minutes + serie.hours * 60 + serie.days * 24 * 60;
+let seriesPercentage = (seriesTime * 100) / lifespanInMinutes;
+console.log(serie.title + " " + " gave " + seriesPercentage.toPrecision(2) + " % of joy to my life")
+}
 }
 
-logOutSeriesText(); // logs out the text found above
+logOutSeriesText(1);
 
 
 // NOnoN0nOYes (Note taking app)
