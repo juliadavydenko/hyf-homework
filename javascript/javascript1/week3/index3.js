@@ -1,5 +1,5 @@
 // Item array removal
-//test
+
 /* I assume there might be a simplier solution to this because wewere given:
 const nameToRemove = "Ahmad";
 Hovewer this option worked as well.
