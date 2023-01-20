@@ -71,7 +71,8 @@ window.getAvailableProducts = function() {
 
   return availableProducts;
 };
-//my code
+
+//my last week's solution code
 const products = getAvailableProducts();
 
 const ul = document.querySelector('ul');
@@ -90,3 +91,64 @@ function renderProducts(products) {
 }
 renderProducts(products);
 console.log()
+
+//this week's tasks
+//task1. Filter products
+
+const searchTerm = document.getElementById("searchTerm");
+
+searchTerm.addEventListener("input", handleSearch);
+
+function handleSearch(event) {
+  const searchTerm = searchTerm.value;
+  // const searchTerm = "Menace";
+  // console.log("text:", event.value);
+
+  const searchResults = movies
+    .sort()
+    .filter((movie) => movie.title.includes(searchTerm))
+    .map((movie) => `<li>${movie.title}</li>`)
+    .join("");
+
+  document.getElementById("searchedMovies").innerHTML = `
+  <ul>
+    ${searchResults}
+  </ul>
+  `;
+}
+
+//task2 Searching for products
+//task3 Filter products based on max price
+//task4 Make the website look nicer!
+//task5 Create some extra feature
+//task6 Sort the products - optional
+
+
+/*Suggested solytion from HYF:
+
+console.log('Script loaded');
+
+const products = getAvailableProducts();
+const productsUl = document.querySelector('section.products ul');
+console.log(productsUl);
+
+function renderProducts(products) {
+    products.forEach(product => {
+        const li = document.createElement('li');
+
+        let shipsToHTML = '';
+        product.shipsTo.forEach(country => shipsToHTML += `<li>${country}</li>`);
+
+        li.innerHTML = `
+            <ul>
+                <li>${product.name}</li>
+                <li>${product.price}</li>
+                <li>${product.rating}</li>
+                <ul class="ships-to">${shipsToHTML}</ul>
+            </ul>
+        `;
+        productsUl.appendChild(li);
+    });
+}
+
+renderProducts(products);*/
