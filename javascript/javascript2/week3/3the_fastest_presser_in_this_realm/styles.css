@@ -1,0 +1,43 @@
+
+h1 {
+  text-align: center;
+  font-family: 'Brush Script MT';
+  color: #76BA99;
+  font-size: 50px;
+}
+
+body {
+  text-align: center;
+  font-family: 'Brush Script MT';
+  color: #ADCF9F;
+}
+
+#input1 {
+  color: grey;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 24px;
+}
+
+input[type=text] {
+  border-bottom: 2px solid #4CAF50;
+  border-top: 2px solid #ADCF9F;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+label {
+  font-size: 16px;
+}
