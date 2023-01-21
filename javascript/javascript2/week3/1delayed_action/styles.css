@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+  background-color: #FF7B54;
+  color: white;
+}
+#map {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #FFB26B;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 24px;
+}
