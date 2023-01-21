@@ -11,7 +11,7 @@ functions.hello();
 functions.question();
 functions.reply();
 
-//2.2 Create a function as a const and try creating a function normally. Call both functions.
+//2.2 Create a function as a const and try creating a function normally, call both functions.
 
 
 function hello() { console.log("Hello, I am declared function!"); }
