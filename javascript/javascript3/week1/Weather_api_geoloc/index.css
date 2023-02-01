@@ -1,0 +1,72 @@
+
+h1 {
+  text-align: center;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  color: #878ECD;
+  font-size: 50px;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  color: #B9BBDF;
+  background-color: #DFF4F3;
+}
+
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: 300px;
+}
+
+#input1 {
+  color: grey;
+}
+
+button {
+  background-color: #878ECD; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 24px;
+}
+
+input[type=text] {
+  border-bottom: 2px solid #878ECD;
+  border-top: 2px solid #B9BBDF;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+label {
+  font-size: 16px;
+}
+
+img {
+  border-radius: 99%;
+  size 50%;
+}
+#result {
+  color: #878ECD;
+  text-align: center;
+}
+.png {
+  height: 50px;
+  width: 50px;
+}
