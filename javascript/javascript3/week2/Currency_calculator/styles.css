@@ -1,0 +1,26 @@
+body {
+    background: url(./japan.jpg);
+    background-position:top;
+    color: #FAAB78;
+    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif; 
+}
+.container {
+position: sticky;
+margin: 91px 200px 500px 200px ;
+padding: 50px 200px 500px 350px;
+height: 400px;
+}
+h1 {
+    text-align: center;
+    color: #FAAB78;
+    font-size: 47px;
+}
+p { font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }
+#button {
+
+    padding: 2px 24px;
+    border-radius: 7px;
+    border: 2px solid #FAAB78;
+    background-color: #2a6542;
+    color: #fadb9a;
+}
