@@ -6,21 +6,91 @@ body {
 }
 .container {
 position: sticky;
-margin: 91px 200px 500px 200px ;
-padding: 50px 200px 500px 350px;
+margin: 91px 150px 500px 165px ;
+padding: 50px 150px 500px 350px;
 height: 400px;
 }
 h1 {
-    text-align: center;
+    text-align:justify;
     color: #FAAB78;
     font-size: 47px;
 }
 p { font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }
-#button {
 
+input[type="number"] {
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: none; 
+    
+    font-size: 20px;
+}
+select {
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    outline: none; 
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    height: 30px;
     padding: 2px 24px;
-    border-radius: 7px;
+    border-radius: 10px;
+    outline: none; 
+    
     border: 2px solid #FAAB78;
     background-color: #2a6542;
     color: #fadb9a;
+    font-size: 20px;
 }
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    background: #7d2736; 
+}
+
+#results {
+    font-size: 30px;
+    font-weight: bold;
+    color:#fadb9a; 
+    margin-top: 150px;
+    background-color:#7d2736;
+    opacity: 0.9;
+    border-radius: 10px;
+    border-style: dashed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
