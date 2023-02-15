@@ -1,0 +1,19 @@
+.container {
+    text-align: center;
+    margin: auto;
+}
+body {
+    text-align: center;
+    background-color: aquamarine;
+}
+.userInput {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: bisque;
+}
