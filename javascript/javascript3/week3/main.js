@@ -1,34 +1,35 @@
-//const userInput = document.querySelector(".userInput");
-const container = document.querySelector(".container");
-//const btn = document.querySelector(".btn");
 
 
 
 
+// Get references to DOM elements
+const urlForm = document.querySelector('#url-form');
+const urlInput = document.querySelector('#url-input');
+const canvas = document.querySelector('#screenshot-canvas');
 
-const btn = document.getElementById('btn');
+// Add event listener to form submit event
+urlForm.addEventListener('submit', async (event) => {
+  event.preventDefault(); // Prevent default form submission behavior
 
-btn.addEventListener("click", download);
-const token = "JVY0M9H-PH0M87T-H71TBVQ-MZTFHKW";
-const userInput = document.querySelector(".userInput");
-let inputValue = userInput.value;
-const url = "https://shot.screenshotapi.net/screenshot?token="+token+"&url=https%3A%2F%2F"+inputValue+"&output=image&file_type=png&wait_for_event=load";
-/*
-https://shot.screenshotapi.net/screenshot?token=JVY0M9H-PH0M87T-H71TBVQ-MZTFHKW&url=https%3A%2F%2Fgoogle.com&output=image&file_type=png&wait_for_event=load
-*/
-function download(event) {
-  fetch(url)
-  .then((response) => response.json())
-  .then((json) => console.log(json));
-};
+  // Get website URL from input field
+
+  const url = urlInput.value.trim();
 
 
+const accessKey = "65b1b3a4b43d463ba5bdb3b38d73342a"; // API access key
+const apiUrl = `https://api.apiflash.com/v1/urltoimage?access_key=${accessKey}&url=${encodeURIComponent(url)}&format=png`;
 
-/*fetch(url)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+fetch(apiUrl)
+  .then(response => response.blob())
+  .then(blob => {
+    // Create a new image element
+    const img = new Image();
+    img.src = URL.createObjectURL(blob);
 
-    fetch('https://crudcrud.com/api/8a9529554ab9479c9fb11bdff078494c')
-};
-*/
+    // Append the image to the document body
+    document.body.appendChild(img);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+});
