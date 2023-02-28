@@ -12,12 +12,11 @@ ALTER TABLE class ADD PRIMARY KEY(id)
 --Student: with the columns: id, name, email, phone, class_id (foreign key)
 
 CREATE TABLE student (
-    id INT NOT NULL,
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255),
     email VARCHAR(255),
     phone VARCHAR(255),
     class_id INT NOT NULL,
-    PRIMARY KEY (id),
      FOREIGN KEY (class_id) 
      REFERENCES class (id)
 );
