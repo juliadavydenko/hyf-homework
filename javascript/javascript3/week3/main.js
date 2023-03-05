@@ -3,7 +3,7 @@
 
 
 // Get references to DOM elements
-const urlForm = document.querySelector('#url-form');
+/*const urlForm = document.querySelector('#url-form');
 const urlInput = document.querySelector('#url-input');
 const canvas = document.querySelector('#screenshot-canvas');
 
@@ -13,7 +13,7 @@ urlForm.addEventListener('submit', async (event) => {
 
   // Get website URL from input field
 
-  const url = urlInput.value.trim();
+  const url = `https://${urlInput.value.trim()}`;
 
 
 const accessKey = "65b1b3a4b43d463ba5bdb3b38d73342a"; // API access key
@@ -28,8 +28,11 @@ fetch(apiUrl)
 
     // Append the image to the document body
     document.body.appendChild(img);
+  fetch(`https://crudcrud.com/api/04f154975b3a4ad1bd24cb9aa6091e2e/screenshots`, {method:"POST", body:JSON.stringify({src:URL.createObjectURL(blob)})})
   })
   .catch(error => {
     console.error('Error:', error);
   });
-});
+});*/
+
+
