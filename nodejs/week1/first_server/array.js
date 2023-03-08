@@ -1,0 +1,1 @@
+module.exports.meals = ["Carrots", "Apples", "Tuna", "Soup", "Yoghurt", "Sushi"];

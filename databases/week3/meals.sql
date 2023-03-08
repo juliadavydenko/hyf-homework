@@ -3,8 +3,8 @@ USE mealsharing;
 CREATE TABLE meal (
     id INT NOT NULL AUTO_INCREMENT, 
     title VARCHAR(255),
-    description TEXT,
-    location VARCHAR(255),
+    `description` TEXT,
+    `location` VARCHAR(255),
     `when` DATETIME,
     max_reservations INT,
     price DECIMAL(3,2),
@@ -36,10 +36,11 @@ CREATE TABLE review (
 );
 
 --1.Queries for the 'meal' table
-
 --Get all meals
-SELECT * FROM meal;
+USE mealsharing
+SELECT * FROM meal
 --Add a new meal
+USE mealsharing
 INSERT INTO meal 
 VALUES (4, 'Cocoa', "Very tasty and smooth hot cocoa", "Aarhus", '2023-03-08 19:55:05', 5, 15.5, '2023-03-07');
 --Get a meal with any id
@@ -74,8 +75,10 @@ WHERE id = 1;
 --2.Queries for the 'review' table
 
 --Get all reviews
+
 SELECT * FROM review;
 --Add a new review
+USE mealsharing;
 INSERT INTO review
 VALUES (1, "Good experience", "Amazing food, highly recommended", 1, 5, '2023-03-07');
 --Get a review with any id

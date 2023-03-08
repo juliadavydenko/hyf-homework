@@ -1,0 +1,134 @@
+
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+use('mealsharing');
+db.createCollection("meal");
+db.createCollection("reservation");
+db.createCollection("review");
+
+db.meal.insertMany([
+  { '_id': 1, 
+  'title': 'Avocado toast', 
+  'description': 'Avocado toast is a type of open sandwich consisting of toast with mashed avocado, and usually salt, black pepper, and sometimes citrus juice. Ingredients added to enhance the flavor include olive oil, hummus, red pepper flakes, feta, dukkah and tomato. Avocado toast became a food trend of the 2010s', 
+  'location': 'Aarhus', 
+  'when': ('2023-03-08T08:00:00Z'),
+  'max_reservations': 5, 
+  'price': 15.5, 
+  'created_date': ('2023-03-07T08:00:00Z')  },
+  { '_id': 2, 
+  'title': 'Shawarma', 
+  'description': 'Shawarma is a popular Middle Eastern dish that originated in the Ottoman Empire, consisting of meat cut into thin slices, stacked in a cone-like shape, and roasted on a slowly-turning vertical rotisserie or spit. Traditionally made with lamb or mutton, it may also be made with chicken, turkey, beef, or veal.', 
+  'location': 'Copenhagen', 
+  'when': ('2023-03-08T08:00:00Z'),
+  'max_reservations': 3, 
+  'price': 50, 
+  'created_date': ('2023-03-08T07:00:00Z')  },
+  { '_id': 3, 
+  'title': 'Smoothie', 
+  'description': 'A smoothie is a beverage made by puréeing ingredients in a blender. A smoothie commonly has a liquid base, such as fruit juice or milk, yogurt, ice cream or cottage cheese. Other ingredients may be added, including fruits, vegetables, non-dairy milk, crushed ice, whey powder or nutritional supplements.', 
+  'location': 'Aarhus', 
+  'when': ('2023-03-08T07:00:00Z'),
+  'max_reservations': 5, 
+  'price': 35, 
+  'created_date': ('2023-03-07T07:00:00Z')  },
+
+  db.reservation.insertMany([
+  { '_id': 1, 
+  'number_of_guests': 2, 
+  'meal_id': 1, 
+  'created_date': ('2023-03-08T08:00:00Z'), 
+  'contact_phonenumber': +45 5035050,
+  'contact_name': 'Celine', 
+  'contact_email': 'celineceline@gmail.com' },
+  { '_id': 2, 
+  'number_of_guests': 2, 
+  'meal_id': 2, 
+  'created_date': ('2023-03-08T08:00:00Z'), 
+  'contact_phonenumber': +45 5035051,
+  'contact_name': 'Zeena', 
+  'contact_email': 'zeena123@gmail.com' },
+  { '_id': 3, 
+  'number_of_guests': 3, 
+  'meal_id': 3, 
+  'created_date': ('2023-03-08T08:00:00Z'), 
+  'contact_phonenumber': +45 579054,
+  'contact_name': 'Samantha', 
+  'contact_email': 'samantha@gmail.com' },
+
+db.review.insertMany([
+  { '_id': 1, 
+  'title': 'Good place!', 
+  'description': 'The creamy avocado mixed with the tough sourdough bread makes for a surprisingly delightful combination.', 
+  'meal_id': 1, 
+  'stars': 5,
+  'created_date': ('2023-03-08T08:00:00Z')  },
+  { '_id': 2, 
+  'title': 'Shawarma review', 
+  'description': 'Shawarma is very tasty! Highly recommended.', 
+  'meal_id': 2, 
+  'stars': 5,
+  'created_date': ('2023-03-08T08:00:00Z')  },
+  { '_id': 3, 
+  'title': 'Smoothies are great!', 
+  'description': 'These smoothies are literally the best!', 
+  'meal_id': 3, 
+  'stars': 5,
+  'created_date': ('2023-03-08T08:00:00Z')  },
+
+
+//1.Queries for the 'meal' table
+
+//Finds all meals
+db.meal.find() 
+
+//Add a new meal - was already added by insertMany command straight away
+
+//Get a meal with any id
+db.meal.find({ '_id': 1 }) 
+
+//Update a meal with any id
+db.meal.updateOne({ '_id': 2 }, { $set {  'title': 'Amazing Shawarma' } })
+
+//Delete a meal with any id 
+db.meal.deleteOne({ '_id': 1 }) 
+
+
+//1.Queries for the 'reservation' table
+
+//Get all reservations
+db.reservation.find() 
+//Add a new reservation - was already added by insertMany command straight away
+//Get a reservation with any id
+db.reservation.find({ '_id': 2 }) 
+//Update a reservation with any id
+db.reservation.updateOne({ '_id': 2 }, { $set {  'title': 'Shawarma is amazing',  } })
+//Delete a reservation with any id
+db.reservation.deleteOne({ '_id': 2 }) 
+
+
+//1.Queries for the 'review' table
+
+//Get all reviews
+db.review.find() 
+//Add a new review - was already added by insertMany command straight away
+//Get a review with any id
+db.review.find({ '_id': 3 }) 
+//Update a review with any id
+db.review.updateOne({ '_id': 1 }, { $set {  'number_of_guests': 3, } })
+//Delete a review with any id
+db.review.deleteOne({ '_id': 1 }) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
