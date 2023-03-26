@@ -8,7 +8,7 @@ function Card(props) {
         <img className="circle-img" src={props.img} alt="avatar_img" />
       </div>
       <div className="bottom">
-        <p className="info">{props.data}</p>
+        <p className="info">{props.date}</p>
         <p className="info">{props.description}</p>
       </div>
     </div>
