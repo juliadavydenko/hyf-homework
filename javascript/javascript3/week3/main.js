@@ -3,7 +3,7 @@
 
 
 // Get references to DOM elements
-/*const urlForm = document.querySelector('#url-form');
+const urlForm = document.querySelector('#url-form');
 const urlInput = document.querySelector('#url-input');
 const canvas = document.querySelector('#screenshot-canvas');
 
@@ -22,17 +22,6 @@ const apiUrl = `https://api.apiflash.com/v1/urltoimage?access_key=${accessKey}&u
 fetch(apiUrl)
   .then(response => response.blob())
   .then(blob => {
-    // Create a new image element
+
     const img = new Image();
-    img.src = URL.createObjectURL(blob);
-
-    // Append the image to the document body
-    document.body.appendChild(img);
-  fetch(`https://crudcrud.com/api/04f154975b3a4ad1bd24cb9aa6091e2e/screenshots`, {method:"POST", body:JSON.stringify({src:URL.createObjectURL(blob)})})
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
-});*/
-
-
+    img.src = URL.createObjectURL(blob);})

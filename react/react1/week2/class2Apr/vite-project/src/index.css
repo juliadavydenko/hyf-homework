@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 400px;
+  min-width: 400px;
+  background-color: #D864A9;
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2em;
+  color: #D864A9;
+  margin: 20px 0 30px;
+}
+
+
+.name {
+  font-size: 2em;
+  color: #2d3436;
+  display: flex;
+  flex: 1;
+  margin: 10% 20px 0;
+}
+
+.bottom {
+  margin: 105px 5px 5px -85px;
+}
+
+.info {
+  padding: 55px 5px 15px 0;
+  margin: 5px 5px;
+  color: #D864A9;
+}
