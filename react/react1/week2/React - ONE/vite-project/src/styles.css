@@ -1,10 +1,12 @@
 body {
-    font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
+font-size: 14px;
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
     min-width: 400px;
-    background-color: #7AA874;
+    color: #2A2F4F;
+    background-color: #FDE2F3;
     text-align: center;
   }
   
@@ -14,56 +16,106 @@ body {
     color: #D864A9;
     margin: 20px 0 30px;
   }
+
+  .rounded-image {
+    height: 300px;
+    width: 400px;
+  }
   
+  .addTask {
+    margin: -170px 10px 10px 10px;
+  }
   .card {
     border-radius: 23px;
     position: relative;
-    padding: 40px 100px;
-    background-color: #F7DB6A;
-    margin: 100px 0;
-    height: 300px;
-    width: 250px;
+    padding: 1px 75px 40px 75px;
+    background-color: #917FB3;
+    margin: 50px;
+    height: 82px;
+    width: 150px;
+    font-size: 10px;
     box-shadow: 0 2px 5px #ccc;
-    text-align: justify;
+    text-align: center;
   }
   
-  .top {
-    border-radius: 25px 25px 0 0;
-    height: 170px;
-    width: 100%;
-    background-color: #EBB02D;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
+  
+  .input-1 {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 200px 100px 20px 17px ;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 300px;
+    height: 5px;;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
   }
   
-  .name {
-    font-size: 2em;
-    color: #2d3436;
-    display: flex;
-    flex: 1;
-    margin: 10% 20px 0;
-  }
+.button-1 {
+  background-color: #E5BEEC;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 10px 16px;
+  position: relative;
+  float: left;
+  text-align: center;
+  vertical-align: baseline;
+  touch-action: manipulation;
+  margin: 70px -50px 20px -40px;
+}
+
+.button-2 {
+  background-color: #E5BEEC;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 10px 16px;
+  position: relative;
+  float: right;
+  text-align: center;
+  vertical-align: baseline;
+  touch-action: manipulation;
+  margin: 70px -50px 20px -40px;
+}
+
+.add-button {
+  margin-left: -5px;
+  background-color: #E5BEEC;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  vertical-align: baseline;
+  touch-action: manipulation;
+}
   
-  .card img {
-    margin: 30px 20px 0 0;
-  }
-  
-  .circle-img {
-    border-radius: 50%;
-    border: 7px solid #fff;
-    width: 120px;
-    height: 120px;
-  }
-  
-  .bottom {
-    margin: 105px 5px 5px -85px;
-  }
-  
-  .info {
-    padding: 55px 5px 15px 0;
-    margin: 5px 5px;
-    color: #D864A9;
-  }
+
   

@@ -2,17 +2,20 @@ import React from "react";
 
 function Card(props) {
   return (
-    <div className="card">
-      <div className="top">
-        <h2 className="name">{props.name}</h2>
-        <img className="circle-img" src={props.img} alt="avatar_img" />
-      </div>
-      <div className="bottom">
-        <p className="info">{props.date}</p>
-        <p className="info">{props.description}</p>
-      </div>
+    <div className="card" style={{ backgroundColor: props.completed ? "white" : "#917FB3"}}>
+      
+  
+      
+  
+    <div className="bottom">
+    <button className="button-1" onClick={() => props.completeTask(props.id)}>Complete</button>
+    <button className="button-2" onClick={() => props.deleteTask(props.id)}>Delete Task</button>
+        </div>
+        <h1>{props.taskName}</h1>
     </div>
   );
 }
 
 export default Card;
+
+
