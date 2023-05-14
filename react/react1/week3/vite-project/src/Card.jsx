@@ -1,18 +1,16 @@
 import React from "react";
 
-function Card(props) {
+function Card({completed, description, id, completeTask, deleteTask, taskName}) {
+  console.log(completed, description, id);
   return (
-    <div className="card" style={{ backgroundColor: props.completed ? "white" : "#917FB3"}}>
-      
-  
-      
-  
+    <div className="card" style={{ backgroundColor: completed ? "white" : "#917FB3"}}>
     <div className="bottom">
-    <button className="button-1" onClick={() => props.completeTask(props.id)}>Complete</button>
-    <button className="button-2" onClick={() => props.deleteTask(props.id)}>Delete Task</button>
+    
+    <button className="button-1" onClick={() => completeTask(id)}>Complete</button>
+    <button className="button-2" onClick={() => deleteTask(id)}>Delete Task</button>
         </div>
-        <h1>{props.taskName}</h1>
-    </div>
+        <h1>{description}</h1> 
+    </div> 
   );
 }
 
